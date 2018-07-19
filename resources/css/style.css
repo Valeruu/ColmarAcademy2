@@ -9,12 +9,13 @@ html,body {
     word-spacing: 1px;
     overflow-x: hidden;
 }
-h2 {
- font-size: 2.5rem;
- margin-top: 24px;
- font-family: Kanit, Arial, "sans-serif";
- color: #d4d4dc;
-}
+
+/* Color Pallet
+  #221309
+  #2d170b
+  #b81717
+  #e73617
+  #ffffff  */
 
 /* Display: flex; */
 .banner, .banner .img-box, .start, .start-here, .about, .img-box, .text, .info, .orientation, .our-campus, .lecture, .information, .learning, .learn, .courses, .course-name, .course-name, .thesis, .exhibit, .exhibition, .video-text, .exhibitions, .exhibit-info, footer, .copyright, .terms {
@@ -28,44 +29,45 @@ header, .header, .navigation-desktop .navigation, .img img, .start-here .button,
 
 /* Background-color: #393f4d; */
 header, .about, .lecture, .thesis {
-  background-color: #393f4d;
+  background-color: #ffffff;
 }
 /* Background-color: #1d1e22; */
 .banner, .learning, .fisma {
-  background-color: #1d1e22;
+  background-color: #ffffff;
 }
 
 /* This is the font styles */
 .font-style-one {
-  font-family: Alegreya, Georgia, serif;
-  font-weight: 400;
-  color: #feda6a;
+  font-family: "Lobster Two", Helvetica, "Lucida Grande", sans-serif;
+  font-weight: 700;
+  color: 	#2d170b;
+  font-size: 3rem;
 }
 .font-style-two {
-  font-family: Kanit, Arial, "sans-serif";
-  font-weight: 600;
-  color: #d4d4dc;
+  font-family: "Lobster Two", Helvetica, "Lucida Grande", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #b81717;
 }
 .font-style-three {
-  font-family: Alegreya, Georgia, serif;
-  font-weight: 500;
-  color: #d4d4dc;
+  font-family: "Lobster Two", Helvetica, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  color: #b81717;
 }
 .font-style-four {
-  font-family: Alegreya, Georgia, serif;
-  font-weight: 400;
-  color: #1d1e22;
+  font-family: Arimo, "Franklin Gothic", Arial, "sans-serif";
+  font-weight: 700;
+  color: 	#2d170b;
 }
 .font-style-five {
   font-family: "Architects Daughter", cursive;
   font-weight: 400;
-  font-style: italic;
-  color: #d4d4dc;
+  color: 	#2d170b;
 }
-.font-style-six {
-  font-family: Alegreya, Georgia, serif;
-  font-weight: 400;
-  color: #d4d4dc;
+
+img, video {
+  border-radius: 20px;
+  border: 0.5px solid #2d170b;
 }
 
 /* This is the header styling */
@@ -74,7 +76,7 @@ header {
   height: 64px;
   position: fixed;
   z-index: 2;
-  border-bottom: 1px solid #d4d4dc;
+  border-bottom: 0.5px solid #2d170b;
 }
 
 .header {
@@ -92,24 +94,23 @@ header {
 .school-logo img {
   margin-left: 24px;
   margin-right: 12px;
-  height: 1.75rem;
+  height: 2rem;
   width: auto;
 }
 
-.school-logo .bold, .school-logo .normal {
+.school-logo {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: Kanit, Arial, "sans-serif";
-  color: #d4d4dc;
 }
 
-.school-logo .bold {
-  font-weight: 600;
+.school-logo .font-style-one {
+  color: #b81717;
+  font-size: 2rem;
 }
-
-.school-logo .normal {
-  font-weight: normal;
+.school-logo .font-style-two {
+  color: 	#e73617;
+  font-size: 2rem;
 }
 
 .navigation-desktop {
@@ -141,9 +142,10 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #d4d4dc;
+  color: #e73617;
+  text-shadow: 2px 2px 12px #e73617;
+  font-style: italic;
 }
-
 
 /* This is the banner styling */
 .banner {
@@ -153,7 +155,7 @@ ul li a:hover {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 32px;
-  border-bottom: 1px solid #d4d4dc;
+  border-bottom: 0.5px dashed #e73617;
 }
 
 .img-box {
@@ -164,7 +166,6 @@ ul li a:hover {
 .start {
   width: 40%;
   margin-left: 32px;
-  border-left: 1px solid #d4d4dc;
 }
 
 .start-here {
@@ -197,20 +198,26 @@ ul li a:hover {
   height: 3rem;
   padding-top: 16px;
   text-align: center;
-  background-color: #feda6a;
-  border-radius: 10px;
-  transition-property: background-color;
-  transition: background-color 2s ease 0.2s;
+  background-color: #e73617	;
+  border-radius: 40px;
+  border: 0.5px solid #2d170b;
+  transition: border-radius 500ms linear 100ms;
 }
 
 .start-here .button:hover {
-  background-color: #d4d4dc;
+  border-radius: 10px;
 }
 
 .button a {
   margin: 8px auto;
   text-decoration: none;
-  color: #1d1e22;
+  color: #ffffff;
+}
+
+.button a:hover  {
+  text-shadow: 2px 2px 25px #ffffff;
+  font-style: italic;
+  color: #2d170b;
 }
 
 /* This is the about us section */
@@ -219,7 +226,7 @@ ul li a:hover {
   padding-right: 24px;
   padding-bottom: 32px;
   padding-top: 32px;
-  border-bottom: 1px solid #d4d4dc;
+  border-bottom: 0.5px dashed #e73617;
 }
 
 .text {
@@ -248,37 +255,48 @@ ul li a:hover {
   justify-content: space-between;
   width: 40%;
   margin-left: 32px;
-  border-left: 1px solid #d4d4dc;
 }
 
 .info div img {
   width: 35%;
   height: 35%;
-  padding-left: 24px;
+  margin-left: 16px;
 }
 
 .orientation, .our-campus, .lecture {
   flex-direction: row;
-  transition-property: background-color;
-  transition: background-color 2s ease 0.2s;
 }
 
-.orientation, .our-campus {
-  padding-bottom: 44px;
-  border-bottom: 1px solid #d4d4dc;
-}
-
-.info div:hover {
-  background-color: #feda6a;
-}
-
-.our-campus {
-  padding-top: 40px;
+.orientation:hover, .our-campus:hover {
+  border:0.5px solid #e73617;
+  border-radius: 20px;
+  box-shadow: 8px 8px #e73617;
 }
 
 .lecture {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  border: 0.5px solid #2d170b;
+  border-radius: 20px;
+  background-color: #e73617;
+}
+
+.lecture:hover {
+  box-shadow: 8px 8px #b81717;
+}
+
+.lecture {
+  border-radius: 20px;
+}
+
+.lecture .information h3 {
+  color: #ffffff;
+}
+
+.lecture .information p {
+  color: #ffffff;
+}
+
+.lecture .information a {
+  color: #ffffff;
 }
 
 .information {
@@ -290,19 +308,14 @@ ul li a:hover {
   width: 65%;
 }
 
-.information h3, .information p, .information a {
-  transition-property: color;
-  transition: color 2s ease 0.2s;
-}
-
 .information h3 {
   font-size: 1.5rem;
   letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 .information p {
  font-size: 1.2rem;
- text-decoration: none;
  line-height: 1.5;
 }
 
@@ -310,11 +323,19 @@ ul li a:hover {
   font-size: 1.10rem;
   text-decoration: none;
   line-height: 1.5;
-  transition: color 2s ease 0.2s;
 }
 
-.information h3:hover, .information p:hover, .information a:hover  {
-  color: #393f4d;
+.information h3:hover  {
+  text-shadow: 2px 2px 12px #b81717;
+}
+
+.information p:hover, .information a:hover  {
+  text-shadow: 2px 2px 12px #2d170b;
+}
+
+
+.lecture h3:hover, .lecture p:hover, .lecture a:hover  {
+  text-shadow: 2px 2px 8px #ffffff;
 }
 
 /* This is the learning section */
@@ -324,7 +345,8 @@ ul li a:hover {
   padding-left: 72px;
   padding-right: 72px;
   padding-bottom: 32px;
-  border-bottom: 1px solid #d4d4dc;
+  padding-top: 32px;
+  border-bottom: 0.5px dashed #e73617;
 }
 
 .learn {
@@ -345,18 +367,6 @@ ul li a:hover {
   width: 33%;
   height: auto;
   margin-right: 32px;
-  border: 1px solid #d4d4dc;
-  box-shadow: 0px 0px 0px #d4d4dc;
-  transition-property: box-shadow;
-  transition: box-shadow 750ms ease-out 150ms;
-}
-
-.course-name div:hover {
-  box-shadow: 5px 5px 50px #d4d4dc;
-}
-
-.course-name div img {
-  border-bottom: 1px solid #d4d4dc;
 }
 
 .course-info h3 {
@@ -365,6 +375,7 @@ ul li a:hover {
   margin-top: 24px;
   margin-bottom: 16px;
   letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 .course-info h4 {
@@ -384,6 +395,12 @@ ul li a:hover {
   margin-top: 16px;
 }
 
+.course-info:hover {
+  border: 0.5px solid #e73617;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px;
+}
+
 .courses div img {
   height: auto;
 }
@@ -394,6 +411,8 @@ ul li a:hover {
   padding-bottom: 32px;
   padding-left: 24px;
   padding-right: 24px;
+  padding-top: 32px;
+  border-bottom: 0.5px solid #2d170b;
 }
 
 .exhibit {
@@ -402,12 +421,11 @@ ul li a:hover {
 }
 
 .exhibit h2 {
-  margin-bottom: 24px
+  margin-bottom: 24px;
 }
 
 .exhibitions {
   margin-left: 32px;
-  border-left: 1px solid #d4d4dc;
 }
 
 .video-text {
@@ -418,6 +436,7 @@ ul li a:hover {
   font-size: 2.5rem;
   margin-top: 24px;
   letter-spacing: 1px;
+  color: #221309;
 }
 
 .video-text p {
@@ -452,37 +471,47 @@ ul li a:hover {
 }
 
 .fisma {
-  padding-top: 32px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #d4d4dc;
-  transition-property: background-color;
-  transition: background-color 2s ease 0.2s;
+  border: 0.5px solid #2d170b;
+  border-radius: 20px;
+  background-color: #e73617;
 }
 
 .fisma:hover {
-  background-color: #feda6a;
+  box-shadow: 8px 8px #b81717;
 }
 
-.now-then {
-  padding-top: 32px;
-  padding-bottom: 24px;
-  transition-property: background-color;
-  transition: background-color 2s ease 0.2s;
+.fisma h3 {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.fisma .exhibit-info h3:hover, .fisma .exhibit-info p:hover {
+  text-shadow: 2px 2px 8px #ffffff;
+}
+
+.fisma p {
+  color: #ffffff;
 }
 
 .now-then:hover {
-  background-color: #feda6a;
+  border:0.5px solid #e73617;
+  border-radius: 20px;
+  box-shadow: 8px 8px #e73617;
+}
+
+.now-then h3 {
+  text-decoration: underline;
+}
+
+.now-then .exhibit-info h3:hover, .now-then .exhibit-info p:hover  {
+  text-shadow: 2px 2px 8px #ffffff;
 }
 
 .exhibit-info {
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 24px;
   width: 65%;
-}
-
-.exhibit-info:hover, .exhibit-info h3:hover, .exhibit-info p:hover {
-  color: #393f4d;
 }
 
 .exhibit-info h3 {
@@ -508,8 +537,7 @@ footer  {
   padding-right: 16px;
   padding-bottom: 16px;
   padding-top: 16px;
-  border-top: 1px solid #d4d4dc;
-  background-color: #393f4d;
+  background-color: #ffffff;
 }
 
 .copyright {
@@ -547,8 +575,6 @@ footer  {
 /* Mobile section */
 @media only screen and (max-device-width: 667px) {
 /* Styles applicable across multiple sections */
-  /* Max Width */
-
   /* Display: none */
   .school-logo, .navigation-desktop, .about .img-box, .course-name div img, .course-name div img, .course-info h4, .course-info p, .video-text, .exhibitions, footer .terms {
     display: none;
@@ -562,7 +588,7 @@ footer  {
     width: 90%;
   }
   /* Flex direction: Column */
-  .banner, .info div, .courses, .course-name, .course-name {
+  .banner, .info div, .courses, .course-name {
     flex-direction: column;
   }
   /* Padding-left: 0px */
@@ -577,9 +603,13 @@ footer  {
   .start, .info, .demonstration {
     border: none;
   }
-  /* Border-bottom: 1px solid #d4d4dc; (silverfox) */
-  .navigation-mobile, .banner .img-box img {
-   border-bottom: 1px solid #d4d4dc;
+  /* Border-bottom: 1px solid #2d170b; () */
+  header, .thesis {
+   border-bottom: 2px solid #2d170b;
+ }
+ /* Border-bottom: 1px solid #e73617; () */
+  .banner, .about, .learning {
+    border-bottom: 2px dashed #e73617;
   }
   /* Header styles */
   .header, .navigation-mobile {
@@ -589,11 +619,16 @@ footer  {
     justify-content: space-around;
   }
   .navigation-mobile img {
-    height: 2.75rem;
+    height: 3rem;
+    width: auto;
     margin-top: auto;
     margin-bottom: auto;
   }
   /*Banner styles*/
+  .banner .img-box {
+    max-width: 90%;
+    margin: auto;
+  }
   .start {
     margin-left: 0px;
   }
@@ -606,14 +641,14 @@ footer  {
   .start-here p {
     margin-top: 0px;
     padding-bottom: 24px;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .start-here .button {
     margin-top: 16px;
     height: 2rem;
     }
   .button a {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     font-weight: bold;
   }
   /*About Us Styles*/
@@ -626,8 +661,20 @@ footer  {
   .info div {
     padding-bottom: 16px;
   }
+  .info div img {
+    margin-left: 0px;
+  }
+  .our-campus {
+    margin: 16px auto;
+  }
   .lecture {
-    background-color: #393f4d;
+    margin-bottom: 32px;
+    padding-bottom: 0px;
+    background-color: #e73617;
+  }
+  .information {
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
   .information h3 {
    font-size: 1.5rem;
@@ -641,16 +688,21 @@ footer  {
   .information a {
    font-size: 1.1rem;
   }
-  .course-name div, .course-name div {
-    border: 1px;
-  }
   .course-info h3 {
     height: 2rem;
     padding-top: 16px;
     text-align: center;
-    color: #1d1e22;
-    background-color: #feda6a;
+    color: #ffffff;
+    background-color: #e73617;
+    border-radius: 40px;
+  }
+  .course-info h3:hover {
     border-radius: 10px;
-    transition: background-color 2s ease 0.2s;
+    box-shadow: 2px 2px 8px;
+    transition: all 400ms linear 100ms;
+  }
+  .video {
+    width: 90%;
+    margin: auto;
   }
 }
