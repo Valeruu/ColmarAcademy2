@@ -571,11 +571,17 @@ footer  {
   .navigation-mobile {
   display: none;
   }
+  .mobile {
+    display: none
+  }
 }
 /* Mobile section */
 @media only screen and (max-device-width: 667px) {
 /* Styles applicable across multiple sections */
   /* Display: none */
+  .desktop {
+    display: none;
+  }
   .school-logo, .navigation-desktop, .about .img-box, .course-name div img, .course-name div img, .course-info h4, .course-info p, .video-text, .exhibitions, footer .terms {
     display: none;
   }
