@@ -23,7 +23,7 @@ html,body {
 }
 
 /* Width: 100%; */
-.header, .navigation-desktop .navigation, .img img, .start-here .button, .img-box, .img-box img, .orientation, .our-campus, .lecture, .learn, .courses, .course-name, .course-name, .courses div img, .exhibit, .exhibition, .video, .video video, .exhibitions div, footer {
+header, .header, .navigation-desktop .navigation, .img img, .start-here .button, .img-box, .img-box img, .orientation, .our-campus, .lecture, .learn, .courses, .course-name, .course-name, .courses div img, .exhibit, .exhibition, .video, .video video, .exhibitions div, footer {
   width: 100%;
 }
 
@@ -74,7 +74,6 @@ img, video {
 header {
   display: flex;
   height: 64px;
-  width: 1423px;
   position: fixed;
   z-index: 2;
   border-bottom: 0.5px solid #2d170b;
